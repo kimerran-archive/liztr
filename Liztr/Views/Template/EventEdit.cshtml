@@ -1,0 +1,33 @@
+﻿<div role="form" ng-init="loadEdit()">
+    <input type="hidden" ng-model="event.Id" value="{{event.Id}}" />
+    <div class="form-group">
+        <label>Event name</label>
+        <input type="text" class="form-control" ng-model="event.Name" placeholder="your event name">
+    </div>
+    <div class="form-group">
+        <label>Details</label>
+        <textarea class="form-control" ng-model="event.Details" placeholder="event details"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Start date</label>
+        <input type="text" class="form-control" ng-model="event.StartDateString">
+    </div>
+    <div class="form-group">
+        <label>End date</label>
+        <input type="text" class="form-control" ng-model="event.EndDateString">
+    </div>
+    <hr />
+    <div class="form-group">
+        <label>Field 1 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.Field1">
+    </div>
+    <div class="form-group">
+        <label>Field 2 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.Field2">
+    </div>
+    <div class="form-group">
+        <label>Field 3 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.Field3">
+    </div>
+    <button ng-click="editEvent()" class="btn btn-default">Save</button>
+</div>

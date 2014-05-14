@@ -1,0 +1,32 @@
+﻿<div role="form">
+    <div class="form-group">
+        <label>Event name</label>
+        <input type="text" class="form-control" ng-model="event.name" placeholder="your event name">
+    </div>
+    <div class="form-group">
+        <label>Details</label>
+        <textarea class="form-control" ng-model="event.details" placeholder="event details"></textarea>
+    </div>
+    <div class="form-group">
+        <label>Start date</label>
+        <input type="text" class="form-control" ng-model="event.startdate">
+    </div>
+    <div class="form-group">
+        <label>End date</label>
+        <input type="text" class="form-control" ng-model="event.enddate">
+    </div>
+    <hr />
+    <div class="form-group">
+        <label>Field 1 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.field1">
+    </div>
+    <div class="form-group">
+        <label>Field 2 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.field2">
+    </div>
+    <div class="form-group">
+        <label>Field 3 (Optional)</label>
+        <input type="text" class="form-control" ng-model="event.field3">
+    </div>
+    <button ng-click="addEvent()"  type="submit" class="btn btn-default">Save</button>
+</div>

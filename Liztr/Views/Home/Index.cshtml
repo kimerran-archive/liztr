@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "List iz it?";
+}
+<div style="height:60px;"></div>
+<div class="row">
+    <div class="col-md-9">
+        <div ng-view></div>
+    </div>
+    <div class="col-md-3" style="background-color:lightgray;height:500px;">
+        side bar ! hello!
+
+    </div>
+</div>
+
+
+@section Scripts
+{
+    <script src="~/scripts/liztr/app.js"></script>
+    <script src="~/scripts/liztr/service.js"></script>
+    <script src="~/scripts/liztr/controller.js"></script>
+    <script src="~/scripts/liztr/route.js"></script>
+}

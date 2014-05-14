@@ -1,0 +1,63 @@
+﻿<div ng-init="init()">
+
+    <p>details of event</p>
+    <p>Name: {{event.Name}}</p>
+
+    <div class="tabbable tabs-below">
+        <ul class="nav nav-pills">
+            <li ng-class="{active: selected_tab == 1}">
+                <a href="#/events/{{eventid}}/reg" ng-click="selected_tab = 1;">New Registration</a>
+            </li>
+            <li ng-class="{active: selected_tab == 2}">
+                <a href="#/events/{{eventid}}/reg" ng-click="selected_tab = 2;">Registered</a>
+            </li>
+            <li ng-class="{active: selected_tab == 3}">
+                <a href="#/events/{{eventid}}/reg" ng-click="selected_tab = 3;">Pre-registered</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+
+        <div class="tab-content" ng-show="selected_tab == 1">
+
+            <p>new registration</p>
+            <p>Registrant : <input type="text" class="topcoat-text-input--large" ng-model="new_registration.RegistrantName" /></p>
+            <p>{{event.Field1}} : <input type="text" ng-model="new_registration.Info1" /></p>
+            <p>{{event.Field2}} : <input type="text" ng-model="new_registration.Info2" /></p>
+            <p>{{event.Field3}} : <input type="text" ng-model="new_registration.Info3" /></p>
+
+            <button ng-click="addRegistration()">Register</button>
+
+        </div>
+
+        <div class="tab-content" ng-show="selected_tab == 2">
+
+
+
+            <ul ng-repeat="reg in registrations">
+                <li>{{reg.RegistrantName}}</li>
+            </ul>
+
+            <hr />
+            <p>Count : {{registrations.count}}</p>
+        </div>
+
+        <div class="tab-content" ng-show="selected_tab == 3">
+            TODO!
+        </div>
+        </div>
+
+     
+      
+
+    
+
+    
+
+       
+
+     
+
+    </div>
+
+<div id="reg1">123123</div>
